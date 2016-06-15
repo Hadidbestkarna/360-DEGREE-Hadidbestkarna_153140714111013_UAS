@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>360 DEGREE | Tiket Kereta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/tiket.css" />
+		<link rel="stylesheet" href="assets/css/tiket_2.css" />
+		<link rel="stylesheet" href="assets/css/error.css" />
+		<!-- Tampil Java-->
+		
+<script>
+	function atam(){
+		var printContent = document.getElementById('kucing').innerHTML;
+		var restorepage = document.body.innerHTML;
+
+			document.body.innerHTML = printContent;
+			window.print();
+			document.body.innerHTML = restorepage;
+		}
+</script>
+		
+	<script src="assets/js/jquery-1.11.3.js" type="text/Javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>  
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+	</head>
+	<body>
+	<div id="wrapper">
+			<header id="header">
+						<div class="inner">
+								
+									<center>
+									<a href="tiket.html" class="logo">
+									<img src="images/logo.png" alt="" width="450px" height="330px" />
+									<a>
+									<a href="#service">
+									<h1 style="color:#087f4a;font-family:courier;">-360D TRAIN-</h1>
+									<a>
+									</center>
+								
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="tiket.html">Home</a></li>
+							<li><a href="tiket.html">Promo</a></li>
+							<li><a href="tiket.html">About</a></li>
+							<li><a href="tiket.html">360 Gallery</a></li>
+							<li><a href="index.html">Logout</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main color main #f2849e-->
+<div ng-app="">
+<section id="service">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+<div id="atas">
+	 <div align="center"><b><h2>Data Penumpang Kereta</h2></b></div>
+		<form name="bawah" id="bawah">
+
+<div id="wrapper">
+            
+            <div id="successMessage"><a href="#portfolio">
+			<div class="form-element">
+            <input type="button" value="Success" style="width: 150px;"/>
+			</div>
+			</a>
+			</div>
+            
+            <div id="errorMessage"></div>
+            <div class="form-element">
+			
+                <label for="text">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama"  ng-model="nama" placeholder="Name">
+				
+            </div>
+			
+			<div class="form-element">
+			
+				<label for="email">Email</label>
+                <input type="text" name="email" id="email" ng-model="email" placeholder = "Email addres">
+
+            </div>
+			
+			<div class="form-element">
+            
+                <label for="phone">Phone/HP</label>
+                <input type="text" name="phone" id="phone"  ng-model="phone" placeholder = "Phone Number" >
+
+            </div>
+			
+            <div class="form-element">
+            
+                <label for="text">Origin</label>
+                <select name="tujuan" id="tujuan"  ng-model="tujuan" placeholder="Choose Origin">
+				
+					<option value="Semarang" style="color:black">Semarang</option>
+					<option value="Bekasi" style="color:black">Bekasi</option>
+					<option value="Jakarta" style="color:black">Jakarta</option>
+					<option value="Malang" style="color:black">Malang</option>
+					<option value="Surabaya" style="color:black">Surabaya</option>
+					<option value="Jogjakarta" style="color:black">Jogjakarta</option>
+					<option value="Bandung" style="color:black">Bandung</option>
+					<option value="Bogor" style="color:black">Bogor</option>
+					
+				</select>
+
+            </div>
+			
+			 <div class="form-element">
+            
+                <label for="text">Destinasi</label>
+                <select name="dari" id="dari"  ng-model="dari" placeholder="Choose Destination">
+				
+					<option value="Semarang" style="color:black">Semarang</option>
+					<option value="Bekasi" style="color:black">Bekasi</option>
+					<option value="Jakarta" style="color:black">Jakarta</option>
+					<option value="Malang" style="color:black">Malang</option>
+					<option value="Surabaya" style="color:black">Surabaya</option>
+					<option value="Jogjakarta" style="color:black">Jogjakarta</option>
+					<option value="Bandung" style="color:black">Bandung</option>
+					<option value="Bogor" style="color:black">Bogor</option>
+					
+				</select>
+
+            </div>
+            
+			
+			<div class="form-element">
+            
+                <label for="text">No. KTP / SIM</label>
+                <input type="text" name="alamat" id="alamat"  ng-model="alamat" placeholder="ID Number"></br>
+
+            </div>
+			
+			<div class="form-element">
+            
+                <label for="date">Tanggal Berangkat</label>
+                <input type="date" name="time" id="date" ng-model="date">
+                <input type="time" name="time" id="time" ng-model="time">
+
+            </div>
+			</br>
+			<div class="form-element">
+            
+                <label for="text" align="left">Kelas Kereta</label>
+				
+                <select name="jk" id="jk"  ng-model="jk">
+				
+					<option value="Ekonomi | Rp. 110.000" style="color:black">Ekonomi</option>
+					<option value="Bussines  | Rp. 250.000" style="color:black">Bussines</option>
+					<option value="Eksekutive | Rp. 305.000" style="color:black">Eksekutive</option>
+					
+				</select>
+
+            </div>
+
+
+<table>
+		<div class="form-group">
+		<td>
+		<div class="caption">
+		<div class="form-element">
+		<center>
+            <input type="button" value="check" id="submitButton" class="btn-submit" style="width:200px; "/>
+		</center>
+		</div>
+		</div>
+		</td>
+		<td>
+		<div class="caption">
+		<div class="form-element">
+		<center>
+            <input type="reset" value="reset" class="btn-submit" style="width:200px;"/>
+		</center>
+		</div>
+		</div>
+		</td>
+		</div>
+</table>
+</div>
+		</form>
+</div>
+<hr/>
+</div>
+</div>	
+</section>
+
+<section id="portfolio">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+	  
+	  
+<div id="kucing">
+<p></p>
+	 <div align="center">
+	 <img src="images/logo.png" alt="" width="150px" height="110px" /></br>
+	 <span style="font-size:20px; color:#087f4a">Train Ticket Tn/Ny. {{nama}}
+	 </span>
+	 </div>
+	 
+	 
+<div style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="50%" border="0" style="color:#087f4a;">
+<tr valign="top">
+<td><br />
+Nama Lengkap
+</td>
+<td style="border-width : 0px;"><br />
+<p>{{nama}}</p>
+</td>
+</tr>
+
+<tr valign="top">
+<td style="border-width : 0px;"><br />
+E-mail / No.Hp
+</td>
+<td style="border-width : 0px;"><br />
+<p>{{email}} / {{phone}}</p>
+</td>
+</tr>
+
+<tr valign="top">
+<td style="border-width : 0px;"><br />
+Origin - Destinasi 
+</td>
+<td style="border-width : 0px;"><br />
+<p>{{dari}} - {{tujuan}}</p>
+</td>
+</tr>
+
+<tr valign="top">
+<td style="border-width : 0px;"><br />
+Tanggal Berangkat
+</td>
+<td style="border-width : 0px;"><br />
+<p>{{date}} Pukul {{time}}</p>
+</td>
+</tr>
+
+<tr valign="top">
+<td style="border-width : 0px;"><br />
+Nomor id
+</td>
+<td style="border-width : 0px;"><br />
+<p>{{alamat}}</p>
+</td>
+</tr>
+
+
+<tr valign="top">
+<td style="border-width : 0px;"><br />
+Kelas Kereta
+</td>
+<td style="border-width : 0px;"><br />
+<p>{{jk}}</p>
+</td>
+</tr>
+
+</table>
+</br>
+<h5 style="color:gray;"><b style="font-size:25px;color:#ca4444;">NOTE : </b>Jangan Lupa Bawa <span style="color:#811515;">Kartu Id (KTP)</span> sebelum keberangkatan</h5>
+</div>
+
+</div>
+
+<div class="form-group">
+<div class="caption">
+<input type="button" id="but2" value="Print" onclick="atam()" class="btn-submit" style="width: 100px;"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>	
+					
+		<!-- Scripts -->
+<script type="text/javascript">
+            
+            function isEmail(email) {
+  
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  
+                return regex.test(email);
+                
+            }
+            
+            $("#submitButton").click(function() {
+                
+                var errorMessage = "";
+                var fieldsMissing = "";
+                
+                if ($("#email").val() == "") {
+                    
+                    fieldsMissing += "<br>Email <i>empty</i>";
+                    
+                }
+                
+                if ($("#phone").val() == "") {
+                    
+                    fieldsMissing += "<br>Phone/HP </br><i>empty</i>";
+                    
+                }
+				
+				
+				if ($("#nama").val() == ""){
+					fieldsMissing +="<br>Nama </br><i>empty</i>";
+				}
+				
+				if ($("#alamat").val() == ""){
+					fieldsMissing +="<br>Alamat </br><i>empty</i>";
+				}
+				
+				if ($("#hobby").val() == ""){
+					fieldsMissing +="<br>Hoby </br><i>empty</i>";
+				}
+                
+                
+                
+                if (fieldsMissing != "") {
+                    
+                    errorMessage += "<p>ERROR 1402 !!!</p>" + fieldsMissing;
+                    
+                }
+                
+                if (isEmail($("#email").val()) == false) {
+                    
+                    errorMessage += "<p>Your email address is not valid</p>";
+                    
+                }
+                
+                if ($.isNumeric($("#phone").val()) == false) {
+                    
+                    errorMessage += "<p>Your phone number is not numeric</p>"
+                    
+                }
+                
+                if (errorMessage != "") {
+                    
+                    $("#errorMessage").html(errorMessage);
+                    
+                } else {
+                    
+                    $("#successMessage").show();
+                    $("#errorMessage").hide();
+                    
+                }
+                
+            });
+            
+            
+</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/jstiket.js"></script>
+			<script src="assets/js/tiket.js"></script>
+
+	</body>
+</html>

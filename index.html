@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>360 DEGREE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+			<header id="header">
+				<img src="images/logo.png" width="300px" height="220px">
+			</header>
+			<form id="signup-form" name="login">
+				<input type="email" name="email" id="email" placeholder="Email Address" />
+				<input type="password" name="pass" id="pass"  placeholder="Password" />
+				<input type="submit" value="Log in" onclick="check(this.form)" id="submitButton" />
+			</form>
+			
+			<script>
+			function check(form) {
+                if(form.email.value == "hadidthegreatleader@gmail.com" && form.pass.value == "000") {
+                    location.href="tiket.html";
+                }
+                else {
+                    location.href="wrong.html";
+                }
+            }	
+			</script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

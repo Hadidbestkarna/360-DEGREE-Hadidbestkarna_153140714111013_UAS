@@ -1,0 +1,41 @@
+ body {
+      color:white;
+      background-repeat:no-repeat;
+	  font-size:100%px;
+    }
+            
+            label {
+                
+                position: relative;
+                top:12px;
+                width:200px;
+                float: left;
+              
+            }
+            
+            #wrapper {
+                
+                width: 550px;
+                margin: 0 auto;
+                
+                
+            }
+            
+            .form-element {
+                
+                margin-bottom:0px;
+                
+            }
+            
+            #submitButton {
+                
+				font-size:100%;
+            }
+            
+            #errorMessage {
+                
+                color: red;
+                font-size: 90% !important;
+                
+            }
+            
